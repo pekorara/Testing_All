@@ -1,4 +1,4 @@
-﻿namespace Testing_HashSet
+﻿namespace Testing_Dictionary
 {
     partial class Form1
     {

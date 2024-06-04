@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{271DFDD3-E2A2-4439-9D5B-6E6951905BE1}</ProjectGuid>
+    <ProjectGuid>{8F06A4A4-37B1-4CE9-A5DB-B49C076E1B75}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Testing_HashSet</RootNamespace>
-    <AssemblyName>Testing_HashSet</AssemblyName>
+    <RootNamespace>Testing_Dictionary</RootNamespace>
+    <AssemblyName>Testing_Dictionary</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,9 +54,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
