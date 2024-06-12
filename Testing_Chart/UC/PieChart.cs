@@ -23,6 +23,7 @@ namespace Testing_Chart.UC
             chart2.Series["Series1"].Points.AddXY("照片", _rand.Next(1, 100));
             chart2.Series["Series1"].Points.AddXY("動畫", _rand.Next(1, 100));
             chart2.Series["Series1"].Points.AddXY("GIF", _rand.Next(1, 100));
+            chart2.ChartAreas[0].Area3DStyle.Enable3D = true;
         }
 
         private void pie_generate_Click(object sender, EventArgs e)
@@ -34,11 +35,11 @@ namespace Testing_Chart.UC
             series.Points.AddXY("照片", _rand.Next(1, 100));
             series.Points.AddXY("動畫", _rand.Next(1, 100));
             series.Points.AddXY("GIF", _rand.Next(1, 100));
-
+            chart1.ChartAreas[0].Area3DStyle.Enable3D = true;
             // 更改文字樣式
             foreach (DataPoint point in series.Points)
             {
-                point.Label = point.YValues[0].ToString();
+                point.Label = point.AxisLabel + ": " + point.YValues[0].ToString();
                 point.LabelForeColor = Color.Aqua;
             }
 

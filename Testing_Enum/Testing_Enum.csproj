@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{102E740C-DBD0-4308-AD51-8375DC7F2CAD}</ProjectGuid>
+    <ProjectGuid>{8D7B71BB-5D6E-4448-B93F-BDE5248EEF9F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Testing_Chart</RootNamespace>
-    <AssemblyName>Testing_Chart</AssemblyName>
+    <RootNamespace>Testing_Enum</RootNamespace>
+    <AssemblyName>Testing_Enum</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,7 +35,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,33 +54,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UC\BarChart.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\BarChart.Designer.cs">
-      <DependentUpon>BarChart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UC\LineChart.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\LineChart.Designer.cs">
-      <DependentUpon>LineChart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UC\PieChart.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\PieChart.Designer.cs">
-      <DependentUpon>PieChart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UC\Testing.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\Testing.Designer.cs">
-      <DependentUpon>Testing.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -91,18 +63,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UC\BarChart.resx">
-      <DependentUpon>BarChart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC\LineChart.resx">
-      <DependentUpon>LineChart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC\PieChart.resx">
-      <DependentUpon>PieChart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC\Testing.resx">
-      <DependentUpon>Testing.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

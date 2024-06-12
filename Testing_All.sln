@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing_Chart", "Testing_Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing_CreatedJson", "Testing_CreatedJson\Testing_CreatedJson.csproj", "{D8E2A2CD-05A1-4569-B25B-81E7BF052929}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing_Enum", "Testing_Enum\Testing_Enum.csproj", "{8D7B71BB-5D6E-4448-B93F-BDE5248EEF9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{D8E2A2CD-05A1-4569-B25B-81E7BF052929}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8E2A2CD-05A1-4569-B25B-81E7BF052929}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8E2A2CD-05A1-4569-B25B-81E7BF052929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D7B71BB-5D6E-4448-B93F-BDE5248EEF9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D7B71BB-5D6E-4448-B93F-BDE5248EEF9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D7B71BB-5D6E-4448-B93F-BDE5248EEF9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D7B71BB-5D6E-4448-B93F-BDE5248EEF9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

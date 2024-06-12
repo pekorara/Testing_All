@@ -21,6 +21,8 @@ namespace Testing_Chart
             barChartShip.Click += (_, __) => Change_chick(new UC.BarChart());
 
             lineChartShip.Click += (_, __) => Change_chick(new UC.LineChart());
+
+            testingShip.Click += (_, __) => Change_chick(new UC.Testing());
         }
 
         private void Change_chick(UserControl uc)

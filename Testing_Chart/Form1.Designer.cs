@@ -33,6 +33,7 @@
             this.pieChartShip = new System.Windows.Forms.ToolStripMenuItem();
             this.barChartShip = new System.Windows.Forms.ToolStripMenuItem();
             this.lineChartShip = new System.Windows.Forms.ToolStripMenuItem();
+            this.testingShip = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +49,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pieChartShip,
             this.barChartShip,
-            this.lineChartShip});
+            this.lineChartShip,
+            this.testingShip});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1200, 24);
@@ -73,6 +75,12 @@
             this.lineChartShip.Size = new System.Drawing.Size(55, 20);
             this.lineChartShip.Text = "折線圖";
             // 
+            // testingShip
+            // 
+            this.testingShip.Name = "testingShip";
+            this.testingShip.Size = new System.Drawing.Size(43, 20);
+            this.testingShip.Text = "元件";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -83,7 +91,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "圖表";
             this.menuStrip1.ResumeLayout(false);
@@ -100,6 +108,7 @@
         private System.Windows.Forms.ToolStripMenuItem pieChartShip;
         private System.Windows.Forms.ToolStripMenuItem barChartShip;
         private System.Windows.Forms.ToolStripMenuItem lineChartShip;
+        private System.Windows.Forms.ToolStripMenuItem testingShip;
     }
 }
 
