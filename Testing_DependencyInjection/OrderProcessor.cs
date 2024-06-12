@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Testing_DependencyInjection.DTO;
 using Testing_DependencyInjection.Interface;
 
@@ -21,7 +17,7 @@ namespace Testing_DependencyInjection
         {
             if (_validator.IsValid(order))
             {
-                // 处理订单的逻辑
+                // 處理訂單邏輯
                 Console.WriteLine($"Order {order.Id} is processed.");
             }
             else
