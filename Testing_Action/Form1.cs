@@ -12,15 +12,17 @@ namespace Testing_Action
 {
     public partial class Form1 : Form
     {
+        private Person person;
+
         public Form1()
         {
             InitializeComponent();
 
             // 使用 Action<string> 定义一个委托，指向具体的方法
-            Action<string> action = PrintMessage;
+            //Action<string> action = PrintMessage;
 
             // 使用 Invoke 调用委托所指向的方法
-            action.Invoke("Hello, World with Action!");
+            //action.Invoke("Hello, World with Action!");
 
             // 也可以直接调用委托
             //action("Hello again with Action!");
@@ -33,6 +35,22 @@ namespace Testing_Action
         public static void PrintMessage(string message)
         {
             Console.WriteLine(message);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            GreetMethod(x =>
+            {
+                Console.WriteLine(x);
+                x = $"New {x}";
+                Console.WriteLine(x);
+            });
+        }
+
+        static void GreetMethod(Action<string> action)
+        {
+            // 調用傳入的 Action 委託
+            action("Alice");
         }
     }
 }
